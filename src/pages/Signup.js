@@ -27,6 +27,8 @@ function Signup() {
       form
     );
 
+    console.log(res);
+
     alert("User Registered Successfully ✅");
     navigate("/login");
 
