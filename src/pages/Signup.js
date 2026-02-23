@@ -20,10 +20,10 @@ function Signup() {
   e.preventDefault();
 
   try {
-    console.log("Calling:", "http://localhost:5002/api/register");
+    console.log("Calling:", `${process.env.REACT_APP_API_URL}api/register` );
 
     const res = await axios.post(
-      "http://localhost:5002/api/register",
+       `${process.env.REACT_APP_API_URL}api/register`,
       form
     );
 
