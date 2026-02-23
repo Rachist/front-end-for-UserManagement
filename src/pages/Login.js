@@ -20,7 +20,7 @@ function Login() {
 
     try {
       const res = await axios.post(
-        "http://localhost:5002/api/login",
+         `${process.env.REACT_APP_API_URL}api/login`,
         form
       );
 
